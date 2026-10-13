@@ -1,20 +1,5 @@
 # LR FX Gen 2 — Plate / Hall / Delay / Harmony (Standalone + VST3)
 
-Plugin efek dengan GUI custom (aset PNG di folder `Assets/`), dibuat dengan JUCE 8 + CMake.
-
-## Build lewat GitHub Actions
-1. Upload isi folder ini ke repository GitHub (branch `main`).
-2. Buka tab **Actions** → workflow **Build LR FX Gen 2** berjalan otomatis (atau jalankan manual via *Run workflow*).
-3. Setelah selesai, unduh hasilnya di bagian **Artifacts** (Windows, macOS, Linux; masing-masing berisi zip VST3 + Standalone).
-4. Untuk membuat Release otomatis: `git tag v1.0.0 && git push --tags`.
-
-## Build lokal
-```
-cmake -B build -DCMAKE_BUILD_TYPE=Release
-cmake --build build --config Release
-```
-Hasil: `build/ReverbFX_artefacts/Release/{VST3,Standalone}`
-
 ## Kontrol
 | Kontrol | Fungsi |
 |---|---|
